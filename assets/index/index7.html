@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/speak.css">
+</head>
+<body>
+    <p><span>Em ơi</span>, ngày mai là <span>Giáng Sinh</span>.</p>
+    <p>Ngày mà đáng ra là anh phải đón chung với em.</p>
+    <p>Nhưng mà có vài vấn đề mà anh phải về quê sớm hơn là anh định</p>
+    <p>Anh rất là xin lỗi luôn, cũng mong là em thông cảm cho anh nữa</p>
+    <p>Giáng sinh năm nay mỗi đứa mỗi nơi, anh cũng buồn nữa</p>
+    <p>Anh mong là những năm sau mình đón chung nha</p>
+    <p>Với em có những cái suy nghĩ hay vấn đề gì thì nhớ chia sẻ với anh,</p>
+    <p>không được giữ nó 1 mình, anh sẽ cũng như vậy luôn. Nhớ nha!</p>
+    <p><span>Chúc em giáng sinh vui vẻ</span>, nếu em có cười thì chụp gửi anh</p>
+    <p>Mấy nay nhớ lắm luôn á T-T ( Nma mấy nay nhắn tin với a cọc quá ) <span>Rất cọc luôn</span></p>
+    <p>Hết gòi :3 Nếu em muốn nói gì thì nhấn Enter. )</p>
+
+    <audio src="../sound/banphim.mp3" class="audio1"></audio>
+
+    <a href="https://www.facebook.com/profile.php?id=100078347502235"></a>
+
+    <script>
+        var audio1 = document.querySelector('.audio1');
+        audio1.play()
+        audio1.onended = function() {
+            audio1.play();
+        }
+        setTimeout(function() {
+            audio1.pause()
+        },55000)
+
+        document.querySelector('body').onkeydown = function(event) {
+            if (event.keyCode == 13) {
+                document.querySelector('a').click()
+            }
+        }
+
+    </script>
+</body>
+</html>
